@@ -101,14 +101,7 @@ public class GameController
         setStartingOptions();
 
         // Updating GUI with timer
-        Timeline timer = new Timeline(new KeyFrame(Duration.millis(30), new EventHandler<ActionEvent>()
-        {
-            @Override
-            public void handle(ActionEvent event)
-            {
-                updateGUI();
-            }
-        }));
+        Timeline timer = new Timeline(new KeyFrame(Duration.millis(30),(event) -> updateGUI() ));
         timer.setCycleCount(Timeline.INDEFINITE);
         timer.play();
 
