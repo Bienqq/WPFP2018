@@ -6,8 +6,6 @@ import okhttp3.*;
 import java.io.IOException;
 import org.json.*;
 
-
-
 public class HttpClient
 {
     private  final String login = "1000276626804260@facebook.com.facebook";

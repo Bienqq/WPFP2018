@@ -9,13 +9,11 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameController">
    <children>
       <ImageView fitHeight="700.0" fitWidth="1100.0" pickOnBounds="true">
-         <image>
-               <Image url="@../images/background.png" />
-         </image>
+            <Image url="@../images/background.png" />
       </ImageView>
       <VBox layoutX="31.0" layoutY="466.0" prefHeight="215.0" prefWidth="1039.0">
          <children>
-            <Label text="Log Book" textFill="WHITE">
+            <Label  text="Log Book" textFill="WHITE">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -149,7 +147,7 @@
             </CheckBox>
          </children>
       </VBox>
-      <VBox layoutX="576.0" layoutY="177.0" prefHeight="222.0" prefWidth="169.0" spacing="20.0">
+      <VBox  layoutX="576.0" layoutY="177.0" prefHeight="222.0" prefWidth="169.0" spacing="20.0">
          <children>
             <ComboBox fx:id="gameModeBox" onAction="#gameSelected" prefHeight="31.0" prefWidth="176.0" promptText="Select game ">
                <cursor>
@@ -166,7 +164,7 @@
                </cursor></ComboBox>
             <Spinner fx:id="spinner" editable="true" prefWidth="180.0" style="-fx-cursor: hand;" BorderPane.alignment="CENTER">
                <valueFactory>
-                  <SpinnerValueFactory.IntegerSpinnerValueFactory max="1000" min="1" />
+                  <SpinnerValueFactory.IntegerSpinnerValueFactory  max="1000" min="1" />
                </valueFactory>
             </Spinner>
             <ComboBox fx:id="valueBox" onAction="#onValueSelected" prefHeight="31.0" prefWidth="180.0" promptText="Select value">
@@ -176,7 +174,7 @@
             </ComboBox>
          </children>
       </VBox>
-      <Button layoutX="576.0" layoutY="419.0" mnemonicParsing="false" onAction="#sendRequest" prefHeight="45.0" prefWidth="169.0" stylesheets="@../styles/style.css" text="Send request">
+      <Button  layoutX="576.0" layoutY="419.0" mnemonicParsing="false" onAction="#sendRequest" prefHeight="45.0" prefWidth="169.0" stylesheets="@../styles/style.css" text="Send request">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -184,6 +182,11 @@
             <Font name="Arial" size="15.0" />
          </font>
       </Button>
+      <ImageView fitHeight="87.0" fitWidth="360.0" layoutX="359.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FP_Logo_Black11-483x136.png" />
+         </image>
+      </ImageView>
       <Button fx:id="startGameButton" layoutX="353.0" layoutY="419.0" mnemonicParsing="false" onAction="#startGameButtonClicked" prefHeight="45.0" prefWidth="169.0" stylesheets="@../styles/style.css" text="Start Game">
          <font>
             <Font name="Arial" size="15.0" />
